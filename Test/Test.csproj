@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{63B7FB0A-A393-4BA8-9F8A-378178397BB7}</ProjectGuid>
+    <ProjectGuid>{E0C1E687-21BA-42F0-85DE-276091628D4A}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>TrackLab_1</RootNamespace>
-    <AssemblyName>TrackLab_1</AssemblyName>
+    <RootNamespace>Test</RootNamespace>
+    <AssemblyName>Test</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -34,10 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="MyDegueLibrary">
-      <HintPath>..\..\MyDegueLibrary\MyDegueLibrary\bin\Debug\MyDegueLibrary.dll</HintPath>
-    </Reference>
-    <Reference Include="Nito.Collections.Deque, Version=1.0.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Nito.Collections.Deque.1.0.4\lib\netstandard2.0\Nito.Collections.Deque.dll</HintPath>
+      <HintPath>..\MyDegueLibrary\bin\Debug\MyDegueLibrary.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -55,7 +52,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

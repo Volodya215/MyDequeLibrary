@@ -5,7 +5,7 @@ using System.Runtime.Remoting.Messaging;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
-  
+
 
 namespace TrackLab_1
 {
@@ -34,7 +34,7 @@ namespace TrackLab_1
             Console.Write("Enter your password: ");
             string pass = Console.ReadLine();
 
-            if(pass == _password)
+            if (pass == _password)
             {
                 Console.Write("Enter new password: ");
                 string temp = Console.ReadLine();
@@ -47,7 +47,7 @@ namespace TrackLab_1
                 else
                     Console.WriteLine("Incorrect new password");
             }
-           else
+            else
                 Console.WriteLine("Access denied!!!");
         }
 
