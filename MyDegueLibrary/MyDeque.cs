@@ -156,79 +156,28 @@ namespace MyDegueLibrary
         public bool IsEmpty() => Size == 0;
 
 
-        public DequeEnum<T> GetEnumerator()
+        internal DequeEnum<T> GetEnumerator()
         {
             return new DequeEnum<T>(Head);
         }
 
-        IEnumerator<T> IEnumerable<T>.GetEnumerator()
-        {
-            return (IEnumerator<T>)GetEnumerator();
-        }
-
-        // TODO
+        IEnumerator<T> IEnumerable<T>.GetEnumerator() 
+        {                                             
+            return GetEnumerator();   
+        }                                             
+                                                      
         IEnumerator IEnumerable.GetEnumerator()
         {
             return (this as IEnumerable<T>).GetEnumerator();
         }
-    }
 
-    // TODO задом наперед
-    public class DequeEnum<T> : IEnumerator<T>
-    {
-        private Item<T> head;
-
-        private Item<T> position = new Item<T>();
-
-        public DequeEnum(Item<T> item)
+        /// <summary>
+        /// Method for inverse search of elements
+        /// </summary>
+        /// <returns></returns>
+        public IEnumerable<T> GetBackEnumerator()
         {
-            head = item;
-            position.Next = head;
+            return new DequeBackEnumerable<T>(Tail);
         }
-
-        public bool MoveNext()
-        {
-            position = position.Next;
-            return position != null;
-        }
-
-        public void Reset()
-        {
-            position.Next = head;
-        }
-
-        object IEnumerator.Current
-        {
-            get
-            {
-                return Current;
-            }
-        }
-
-        // TODO Переписати код
-        public T Current
-        {
-            get
-            {
-                try
-                {
-                    return position.Data;
-                }
-                catch (IndexOutOfRangeException)
-                {
-                    throw new InvalidOperationException();
-                }
-            }
-        }
-        void IDisposable.Dispose() { }
-
-    }
-
-    public class DequeEventArgs<T>
-    {
-        // Result
-        public T Result { get; }
-
-        public DequeEventArgs(T result) => Result = result;
-    }
+    }  
 }

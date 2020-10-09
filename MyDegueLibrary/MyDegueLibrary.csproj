@@ -41,8 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Iterator\DequeBackEnumerable.cs" />
+    <Compile Include="Iterator\DequeBackEnumerator.cs" />
+    <Compile Include="Iterator\DequeEnum.cs" />
+    <Compile Include="Data\DequeEventArgs.cs" />
     <Compile Include="MyDeque.cs" />
-    <Compile Include="Item.cs" />
+    <Compile Include="Data\Item.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

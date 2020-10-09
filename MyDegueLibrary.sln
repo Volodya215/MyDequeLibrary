@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDegueLibrary", "MyDegueLibrary\MyDegueLibrary.csproj", "{04C3EEA4-7462-4837-B5EF-D1766265D751}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{E0C1E687-21BA-42F0-85DE-276091628D4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWork", "Test\ClientWork.csproj", "{E0C1E687-21BA-42F0-85DE-276091628D4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

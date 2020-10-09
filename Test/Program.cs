@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using MyDegueLibrary;
 
 namespace TrackLab_1
@@ -19,6 +20,15 @@ namespace TrackLab_1
 
             // Перевіряємо роботу foreach
             foreach (var item in first)
+            {
+                Console.Write(item.ToString() + "  ");
+            }
+            Console.WriteLine();
+            Console.WriteLine(new string('-', 13));
+
+            // Перевіряємо роботу foreach back
+            Console.WriteLine("!!!!!!!!!!!!");
+            foreach (var item in first.GetBackEnumerator())
             {
                 Console.Write(item.ToString() + "  ");
             }
