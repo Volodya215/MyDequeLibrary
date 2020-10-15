@@ -14,15 +14,21 @@ namespace MyDegueLibrary
 
         public int Size { get; private set; } = 0;
 
-        private Item<T> Head;
-        private Item<T> Tail;
+        public Item<T> Head { get; private set; }
+        public Item<T> Tail { get; private set; }
 
         public MyDeque() { }
         public MyDeque(T data) => SetHeadItem(data);
 
-        // Add first element in Deque
+        /// <summary>
+        /// Add first element in Deque
+        /// </summary>
+        /// <param name="data"></param>
         private void SetHeadItem(T data)
         {
+            if (data == null)
+                throw new ArgumentNullException("Data equal null");
+
             var temp = new Item<T>(data);
             Head = Tail = temp;
             Size = 1;
@@ -35,6 +41,8 @@ namespace MyDegueLibrary
         /// <param name="data"></param>
         public void AddToBack(T data)
         {
+            if (data == null)
+                throw new ArgumentNullException("Data equal null");
             if (Size == 0)
             {
                 SetHeadItem(data);
@@ -54,6 +62,8 @@ namespace MyDegueLibrary
         /// <param name="data"></param>
         public void AddToFront(T data)
         {
+            if (data == null)
+                throw new ArgumentNullException("Data equal null");
             if (Size == 0)
             {
                 SetHeadItem(data);
@@ -83,7 +93,7 @@ namespace MyDegueLibrary
                 Notify?.Invoke(this, new DequeEventArgs<T>(result));
             }
             else
-                throw new InvalidOperationException("The queue is empty");
+                throw new InvalidOperationException("The dequeue is empty");
 
         }
 

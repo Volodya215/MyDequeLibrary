@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace MyDegueLibrary
 {
-    internal class Item<T>
+    public class Item<T>
     {
-        internal T Data { get; set; }
+        public T Data { get; private set; }
 
         internal Item<T> Previous { get; set; }
         internal Item<T> Next { get; set; }

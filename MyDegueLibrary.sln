@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDegueLibrary", "MyDegueLi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientWork", "Test\ClientWork.csproj", "{E0C1E687-21BA-42F0-85DE-276091628D4A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDeque.NunitTest", "NunitDequeTest\MyDeque.NunitTest.csproj", "{B49C201E-7CF6-4E9E-B715-649E28684B9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E0C1E687-21BA-42F0-85DE-276091628D4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0C1E687-21BA-42F0-85DE-276091628D4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0C1E687-21BA-42F0-85DE-276091628D4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B49C201E-7CF6-4E9E-B715-649E28684B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B49C201E-7CF6-4E9E-B715-649E28684B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B49C201E-7CF6-4E9E-B715-649E28684B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B49C201E-7CF6-4E9E-B715-649E28684B9E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
